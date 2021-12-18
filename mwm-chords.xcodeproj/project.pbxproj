@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0528F353276D30260083E05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F352276D30260083E05E /* AppDelegate.swift */; };
+		0528F355276D30260083E05E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F354276D30260083E05E /* SceneDelegate.swift */; };
+		0528F357276D30260083E05E /* ChordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F356276D30260083E05E /* ChordsViewController.swift */; };
+		0528F35A276D30260083E05E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0528F358276D30260083E05E /* Main.storyboard */; };
+		0528F35C276D30270083E05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0528F35B276D30270083E05E /* Assets.xcassets */; };
+		0528F35F276D30270083E05E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0528F35D276D30270083E05E /* LaunchScreen.storyboard */; };
+		055EF06E276E1F3F002A62A1 /* MusicTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF06D276E1F3F002A62A1 /* MusicTabBar.swift */; };
+		055EF070276E2745002A62A1 /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF06F276E2745002A62A1 /* TunerViewController.swift */; };
+		055EF072276E2757002A62A1 /* ChromaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF071276E2757002A62A1 /* ChromaticViewController.swift */; };
+		055EF074276E278F002A62A1 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF073276E278F002A62A1 /* MetronomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0528F34F276D30260083E05E /* mwm-chords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mwm-chords.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0528F352276D30260083E05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0528F354276D30260083E05E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0528F356276D30260083E05E /* ChordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordsViewController.swift; sourceTree = "<group>"; };
+		0528F359276D30260083E05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0528F35B276D30270083E05E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0528F35E276D30270083E05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0528F360276D30270083E05E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		055EF06D276E1F3F002A62A1 /* MusicTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTabBar.swift; sourceTree = "<group>"; };
+		055EF06F276E2745002A62A1 /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
+		055EF071276E2757002A62A1 /* ChromaticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaticViewController.swift; sourceTree = "<group>"; };
+		055EF073276E278F002A62A1 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0528F34C276D30260083E05E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0528F346276D30260083E05E = {
+			isa = PBXGroup;
+			children = (
+				0528F351276D30260083E05E /* mwm-chords */,
+				0528F350276D30260083E05E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0528F350276D30260083E05E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0528F34F276D30260083E05E /* mwm-chords.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0528F351276D30260083E05E /* mwm-chords */ = {
+			isa = PBXGroup;
+			children = (
+				0528F352276D30260083E05E /* AppDelegate.swift */,
+				0528F354276D30260083E05E /* SceneDelegate.swift */,
+				055EF06D276E1F3F002A62A1 /* MusicTabBar.swift */,
+				0528F356276D30260083E05E /* ChordsViewController.swift */,
+				055EF06F276E2745002A62A1 /* TunerViewController.swift */,
+				055EF071276E2757002A62A1 /* ChromaticViewController.swift */,
+				055EF073276E278F002A62A1 /* MetronomeViewController.swift */,
+				0528F358276D30260083E05E /* Main.storyboard */,
+				0528F35B276D30270083E05E /* Assets.xcassets */,
+				0528F35D276D30270083E05E /* LaunchScreen.storyboard */,
+				0528F360276D30270083E05E /* Info.plist */,
+			);
+			path = "mwm-chords";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0528F34E276D30260083E05E /* mwm-chords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0528F363276D30270083E05E /* Build configuration list for PBXNativeTarget "mwm-chords" */;
+			buildPhases = (
+				0528F34B276D30260083E05E /* Sources */,
+				0528F34C276D30260083E05E /* Frameworks */,
+				0528F34D276D30260083E05E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mwm-chords";
+			productName = "mwm-chords";
+			productReference = 0528F34F276D30260083E05E /* mwm-chords.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0528F347276D30260083E05E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					0528F34E276D30260083E05E = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = 0528F34A276D30260083E05E /* Build configuration list for PBXProject "mwm-chords" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0528F346276D30260083E05E;
+			productRefGroup = 0528F350276D30260083E05E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0528F34E276D30260083E05E /* mwm-chords */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0528F34D276D30260083E05E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0528F35F276D30270083E05E /* LaunchScreen.storyboard in Resources */,
+				0528F35C276D30270083E05E /* Assets.xcassets in Resources */,
+				0528F35A276D30260083E05E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0528F34B276D30260083E05E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055EF070276E2745002A62A1 /* TunerViewController.swift in Sources */,
+				0528F357276D30260083E05E /* ChordsViewController.swift in Sources */,
+				055EF06E276E1F3F002A62A1 /* MusicTabBar.swift in Sources */,
+				0528F353276D30260083E05E /* AppDelegate.swift in Sources */,
+				0528F355276D30260083E05E /* SceneDelegate.swift in Sources */,
+				055EF072276E2757002A62A1 /* ChromaticViewController.swift in Sources */,
+				055EF074276E278F002A62A1 /* MetronomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0528F358276D30260083E05E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0528F359276D30260083E05E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0528F35D276D30270083E05E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0528F35E276D30270083E05E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0528F361276D30270083E05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0528F362276D30270083E05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0528F364276D30270083E05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 747B9YDG8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "mwm-chords/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ayoubhan.mwm-chords";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0528F365276D30270083E05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 747B9YDG8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "mwm-chords/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ayoubhan.mwm-chords";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0528F34A276D30260083E05E /* Build configuration list for PBXProject "mwm-chords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0528F361276D30270083E05E /* Debug */,
+				0528F362276D30270083E05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0528F363276D30270083E05E /* Build configuration list for PBXNativeTarget "mwm-chords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0528F364276D30270083E05E /* Debug */,
+				0528F365276D30270083E05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0528F347276D30260083E05E /* Project object */;
+}

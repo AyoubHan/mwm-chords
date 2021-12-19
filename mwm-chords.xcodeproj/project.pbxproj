@@ -10,13 +10,13 @@
 		0528F353276D30260083E05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F352276D30260083E05E /* AppDelegate.swift */; };
 		0528F355276D30260083E05E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F354276D30260083E05E /* SceneDelegate.swift */; };
 		0528F357276D30260083E05E /* ChordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F356276D30260083E05E /* ChordsViewController.swift */; };
-		0528F35A276D30260083E05E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0528F358276D30260083E05E /* Main.storyboard */; };
+		0528F35A276D30260083E05E /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0528F358276D30260083E05E /* TabBar.storyboard */; };
 		0528F35C276D30270083E05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0528F35B276D30270083E05E /* Assets.xcassets */; };
 		0528F35F276D30270083E05E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0528F35D276D30270083E05E /* LaunchScreen.storyboard */; };
-		055EF06E276E1F3F002A62A1 /* MusicTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF06D276E1F3F002A62A1 /* MusicTabBar.swift */; };
-		055EF070276E2745002A62A1 /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF06F276E2745002A62A1 /* TunerViewController.swift */; };
-		055EF072276E2757002A62A1 /* ChromaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF071276E2757002A62A1 /* ChromaticViewController.swift */; };
-		055EF074276E278F002A62A1 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF073276E278F002A62A1 /* MetronomeViewController.swift */; };
+		05A49F11276F5D0F0058C7F8 /* Chords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A49F10276F5D0F0058C7F8 /* Chords.storyboard */; };
+		05A49F13276F5F310058C7F8 /* Tuner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A49F12276F5F310058C7F8 /* Tuner.storyboard */; };
+		05A49F15276F60A80058C7F8 /* Chromatic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A49F14276F60A80058C7F8 /* Chromatic.storyboard */; };
+		05A49F17276F60F60058C7F8 /* Metronome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A49F16276F60F60058C7F8 /* Metronome.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,14 +24,14 @@
 		0528F352276D30260083E05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0528F354276D30260083E05E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0528F356276D30260083E05E /* ChordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordsViewController.swift; sourceTree = "<group>"; };
-		0528F359276D30260083E05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0528F359276D30260083E05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
 		0528F35B276D30270083E05E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0528F35E276D30270083E05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0528F360276D30270083E05E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		055EF06D276E1F3F002A62A1 /* MusicTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTabBar.swift; sourceTree = "<group>"; };
-		055EF06F276E2745002A62A1 /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
-		055EF071276E2757002A62A1 /* ChromaticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaticViewController.swift; sourceTree = "<group>"; };
-		055EF073276E278F002A62A1 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
+		05A49F10276F5D0F0058C7F8 /* Chords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chords.storyboard; sourceTree = "<group>"; };
+		05A49F12276F5F310058C7F8 /* Tuner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tuner.storyboard; sourceTree = "<group>"; };
+		05A49F14276F60A80058C7F8 /* Chromatic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chromatic.storyboard; sourceTree = "<group>"; };
+		05A49F16276F60F60058C7F8 /* Metronome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Metronome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +66,15 @@
 			children = (
 				0528F352276D30260083E05E /* AppDelegate.swift */,
 				0528F354276D30260083E05E /* SceneDelegate.swift */,
-				055EF06D276E1F3F002A62A1 /* MusicTabBar.swift */,
 				0528F356276D30260083E05E /* ChordsViewController.swift */,
-				055EF06F276E2745002A62A1 /* TunerViewController.swift */,
-				055EF071276E2757002A62A1 /* ChromaticViewController.swift */,
-				055EF073276E278F002A62A1 /* MetronomeViewController.swift */,
-				0528F358276D30260083E05E /* Main.storyboard */,
+				0528F358276D30260083E05E /* TabBar.storyboard */,
 				0528F35B276D30270083E05E /* Assets.xcassets */,
 				0528F35D276D30270083E05E /* LaunchScreen.storyboard */,
 				0528F360276D30270083E05E /* Info.plist */,
+				05A49F10276F5D0F0058C7F8 /* Chords.storyboard */,
+				05A49F12276F5F310058C7F8 /* Tuner.storyboard */,
+				05A49F14276F60A80058C7F8 /* Chromatic.storyboard */,
+				05A49F16276F60F60058C7F8 /* Metronome.storyboard */,
 			);
 			path = "mwm-chords";
 			sourceTree = "<group>";
@@ -139,7 +139,11 @@
 			files = (
 				0528F35F276D30270083E05E /* LaunchScreen.storyboard in Resources */,
 				0528F35C276D30270083E05E /* Assets.xcassets in Resources */,
-				0528F35A276D30260083E05E /* Main.storyboard in Resources */,
+				0528F35A276D30260083E05E /* TabBar.storyboard in Resources */,
+				05A49F11276F5D0F0058C7F8 /* Chords.storyboard in Resources */,
+				05A49F13276F5F310058C7F8 /* Tuner.storyboard in Resources */,
+				05A49F15276F60A80058C7F8 /* Chromatic.storyboard in Resources */,
+				05A49F17276F60F60058C7F8 /* Metronome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,25 +154,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				055EF070276E2745002A62A1 /* TunerViewController.swift in Sources */,
 				0528F357276D30260083E05E /* ChordsViewController.swift in Sources */,
-				055EF06E276E1F3F002A62A1 /* MusicTabBar.swift in Sources */,
 				0528F353276D30260083E05E /* AppDelegate.swift in Sources */,
 				0528F355276D30260083E05E /* SceneDelegate.swift in Sources */,
-				055EF072276E2757002A62A1 /* ChromaticViewController.swift in Sources */,
-				055EF074276E278F002A62A1 /* MetronomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0528F358276D30260083E05E /* Main.storyboard */ = {
+		0528F358276D30260083E05E /* TabBar.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0528F359276D30260083E05E /* Base */,
 			);
-			name = Main.storyboard;
+			name = TabBar.storyboard;
 			sourceTree = "<group>";
 		};
 		0528F35D276D30270083E05E /* LaunchScreen.storyboard */ = {
@@ -310,7 +310,7 @@
 				INFOPLIST_FILE = "mwm-chords/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,7 +338,7 @@
 				INFOPLIST_FILE = "mwm-chords/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

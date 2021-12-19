@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gHQ-l4-y7Y">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Metronome-->
+        <scene sceneID="uqI-Np-C8I">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Metronome" id="fqX-X7-lsP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Metronome" image="metronome.fill" catalog="system" id="FKX-Dk-wHV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WwP-by-Cyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="390"/>
+        </scene>
+        <!--Chords-->
+        <scene sceneID="LfD-yR-DnX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chords" id="pSM-8X-cg1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chords" image="music.quarternote.3" catalog="system" id="UAS-Jr-L3c"/>
+                    <navigationItem key="navigationItem" id="aw2-xR-4hN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tf9-MO-pbK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="412"/>
+        </scene>
+        <!--Tuner-->
+        <scene sceneID="c9L-Kw-NkB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tuner" id="Yus-9u-lpe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tuner" image="tuningfork" catalog="system" id="atN-Vl-r8n"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BdT-Qg-z2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-547" y="390"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hv7-Do-Rcb">
+            <objects>
+                <tabBarController id="gHQ-l4-y7Y" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e38-gh-NUh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemPinkColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Yus-9u-lpe" kind="relationship" relationship="viewControllers" id="Uov-cA-K6t"/>
+                        <segue destination="hZs-0e-yfm" kind="relationship" relationship="viewControllers" id="9Ec-Wb-OLq"/>
+                        <segue destination="pSM-8X-cg1" kind="relationship" relationship="viewControllers" id="2fT-Fr-hx0"/>
+                        <segue destination="fqX-X7-lsP" kind="relationship" relationship="viewControllers" id="As4-nc-hcj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzB-UI-eMv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-75" y="23"/>
+        </scene>
+        <!--Chromatic-->
+        <scene sceneID="Gz6-kG-zf2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chromatic" id="hZs-0e-yfm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chromatic" image="waveform.path" catalog="system" id="C77-Gs-RyO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TU7-FK-Huo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="412"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="metronome.fill" catalog="system" width="128" height="121"/>
+        <image name="music.quarternote.3" catalog="system" width="128" height="103"/>
+        <image name="tuningfork" catalog="system" width="128" height="116"/>
+        <image name="waveform.path" catalog="system" width="128" height="117"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

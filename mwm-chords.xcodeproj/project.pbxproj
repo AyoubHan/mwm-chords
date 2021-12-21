@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0513A5622771F2C100B8D207 /* ChordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A5612771F2C100B8D207 /* ChordsViewModel.swift */; };
 		0528F353276D30260083E05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F352276D30260083E05E /* AppDelegate.swift */; };
 		0528F355276D30260083E05E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F354276D30260083E05E /* SceneDelegate.swift */; };
 		0528F357276D30260083E05E /* ChordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F356276D30260083E05E /* ChordsViewController.swift */; };
@@ -17,9 +18,12 @@
 		05A49F13276F5F310058C7F8 /* Tuner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A49F12276F5F310058C7F8 /* Tuner.storyboard */; };
 		05A49F15276F60A80058C7F8 /* Chromatic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A49F14276F60A80058C7F8 /* Chromatic.storyboard */; };
 		05A49F17276F60F60058C7F8 /* Metronome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A49F16276F60F60058C7F8 /* Metronome.storyboard */; };
+		05A49F19276F65600058C7F8 /* ChordsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A49F18276F65600058C7F8 /* ChordsService.swift */; };
+		05A49F1B276F68340058C7F8 /* Tone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A49F1A276F68340058C7F8 /* Tone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0513A5612771F2C100B8D207 /* ChordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordsViewModel.swift; sourceTree = "<group>"; };
 		0528F34F276D30260083E05E /* mwm-chords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mwm-chords.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0528F352276D30260083E05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0528F354276D30260083E05E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 		05A49F12276F5F310058C7F8 /* Tuner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tuner.storyboard; sourceTree = "<group>"; };
 		05A49F14276F60A80058C7F8 /* Chromatic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chromatic.storyboard; sourceTree = "<group>"; };
 		05A49F16276F60F60058C7F8 /* Metronome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Metronome.storyboard; sourceTree = "<group>"; };
+		05A49F18276F65600058C7F8 /* ChordsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordsService.swift; sourceTree = "<group>"; };
+		05A49F1A276F68340058C7F8 /* Tone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0513A55F2771F29000B8D207 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0528F352276D30260083E05E /* AppDelegate.swift */,
+				0528F354276D30260083E05E /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0513A5602771F2A800B8D207 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0513A5612771F2C100B8D207 /* ChordsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0513A5632771F2CB00B8D207 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0513A5652771F2DD00B8D207 /* UIs */,
+				0513A5642771F2D100B8D207 /* Controllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0513A5642771F2D100B8D207 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0528F356276D30260083E05E /* ChordsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0513A5652771F2DD00B8D207 /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				0528F358276D30260083E05E /* TabBar.storyboard */,
+				05A49F12276F5F310058C7F8 /* Tuner.storyboard */,
+				05A49F14276F60A80058C7F8 /* Chromatic.storyboard */,
+				05A49F10276F5D0F0058C7F8 /* Chords.storyboard */,
+				05A49F16276F60F60058C7F8 /* Metronome.storyboard */,
+				0528F35D276D30270083E05E /* LaunchScreen.storyboard */,
+			);
+			path = UIs;
+			sourceTree = "<group>";
+		};
+		0513A5662771F30A00B8D207 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05A49F1A276F68340058C7F8 /* Tone.swift */,
+				05A49F18276F65600058C7F8 /* ChordsService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0528F346276D30260083E05E = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +126,12 @@
 		0528F351276D30260083E05E /* mwm-chords */ = {
 			isa = PBXGroup;
 			children = (
-				0528F352276D30260083E05E /* AppDelegate.swift */,
-				0528F354276D30260083E05E /* SceneDelegate.swift */,
-				0528F356276D30260083E05E /* ChordsViewController.swift */,
-				0528F358276D30260083E05E /* TabBar.storyboard */,
+				0513A5662771F30A00B8D207 /* Model */,
+				0513A5632771F2CB00B8D207 /* View */,
+				0513A5602771F2A800B8D207 /* ViewModel */,
+				0513A55F2771F29000B8D207 /* Supporting Files */,
 				0528F35B276D30270083E05E /* Assets.xcassets */,
-				0528F35D276D30270083E05E /* LaunchScreen.storyboard */,
 				0528F360276D30270083E05E /* Info.plist */,
-				05A49F10276F5D0F0058C7F8 /* Chords.storyboard */,
-				05A49F12276F5F310058C7F8 /* Tuner.storyboard */,
-				05A49F14276F60A80058C7F8 /* Chromatic.storyboard */,
-				05A49F16276F60F60058C7F8 /* Metronome.storyboard */,
 			);
 			path = "mwm-chords";
 			sourceTree = "<group>";
@@ -156,7 +213,10 @@
 			files = (
 				0528F357276D30260083E05E /* ChordsViewController.swift in Sources */,
 				0528F353276D30260083E05E /* AppDelegate.swift in Sources */,
+				05A49F19276F65600058C7F8 /* ChordsService.swift in Sources */,
+				0513A5622771F2C100B8D207 /* ChordsViewModel.swift in Sources */,
 				0528F355276D30260083E05E /* SceneDelegate.swift in Sources */,
+				05A49F1B276F68340058C7F8 /* Tone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

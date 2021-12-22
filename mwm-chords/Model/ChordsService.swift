@@ -25,7 +25,7 @@ final class ChordsService {
         self.sessionKeyChords = sessionKeyChords
     }
     
-    func getChordTones(callback: @escaping (Result<String, Error>) -> Void) {
+    func getChordTones(callback: @escaping (Result<[String], Error>) -> Void) {
         
         guard let chordsURL = URL(string: "https://europe-west1-mwm-sandbox.cloudfunctions.net/midi-chords") else { return }
                 
@@ -52,10 +52,10 @@ final class ChordsService {
                     return
                 }
                 
-                let result = responseJSON.allkeys.map({ $0.name }).sorted()
+                let resultNames = responseJSON.allkeys.map({ $0.name }).sorted()
 
-                callback(.success(result.joined(separator: ",")))
-                print(result)
+                callback(.success(resultNames))
+                print(resultNames)
             }
         })
         

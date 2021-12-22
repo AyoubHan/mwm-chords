@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CLW-aV-8CK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,8 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8y1-kV-flM">
-                                <rect key="frame" x="20" y="118" width="374" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8y1-kV-flM">
+                                <rect key="frame" x="20" y="118" width="374" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -35,10 +37,7 @@
                         <constraints>
                             <constraint firstItem="nYv-Ni-OhY" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="1SL-pj-II5"/>
                             <constraint firstItem="nYv-Ni-OhY" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Cy0-AS-QBX"/>
-                            <constraint firstItem="8y1-kV-flM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="EIc-zC-3fH"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8y1-kV-flM" secondAttribute="trailing" constant="20" id="Gng-ib-aKW"/>
                             <constraint firstItem="nYv-Ni-OhY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PD7-Cy-Lqh"/>
-                            <constraint firstItem="8y1-kV-flM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="dpe-QV-HpY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chords" id="QXl-et-GMT">
@@ -49,6 +48,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="chordTonesPickerView" destination="nYv-Ni-OhY" id="yBT-Ft-rF4"/>
+                        <outlet property="chordsDataLabel" destination="8y1-kV-flM" id="ZW6-Io-jiI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

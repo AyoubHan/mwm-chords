@@ -1,5 +1,5 @@
 //
-//  ToneStruct.swift
+//  Tone.swift
 //  mwm-chords
 //
 //  Created by papuruu on 19/12/2021.

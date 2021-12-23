@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class ChordsViewModel {
+    let chordTonesService = ChordTonesService()
+    let keyChordsService = KeyChordsService()
+}

@@ -10,6 +10,14 @@
 		0513A5622771F2C100B8D207 /* ChordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A5612771F2C100B8D207 /* ChordsViewModel.swift */; };
 		0513A56A277366E500B8D207 /* PickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A569277366E500B8D207 /* PickerData.swift */; };
 		0513A5702773A10600B8D207 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A56F2773A10600B8D207 /* Array+Extension.swift */; };
+		0513A5722773CCFB00B8D207 /* KeyChordsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A5712773CCFB00B8D207 /* KeyChordsService.swift */; };
+		0513A5742773CE3F00B8D207 /* Error+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A5732773CE3F00B8D207 /* Error+Enum.swift */; };
+		0513A57D2773CF4200B8D207 /* mwm_chordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A57C2773CF4200B8D207 /* mwm_chordsTests.swift */; };
+		0513A5852773D01E00B8D207 /* ChordTonesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A5842773D01E00B8D207 /* ChordTonesServiceTests.swift */; };
+		0513A5872773D05100B8D207 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A5862773D05100B8D207 /* FakeResponseData.swift */; };
+		0513A5892773D15F00B8D207 /* Tones.json in Resources */ = {isa = PBXBuildFile; fileRef = 0513A5882773D15F00B8D207 /* Tones.json */; };
+		0513A58B2773D27700B8D207 /* KeyChords.json in Resources */ = {isa = PBXBuildFile; fileRef = 0513A58A2773D27700B8D207 /* KeyChords.json */; };
+		0513A58D2773D31200B8D207 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A58C2773D31200B8D207 /* URLSessionFake.swift */; };
 		0528F353276D30260083E05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F352276D30260083E05E /* AppDelegate.swift */; };
 		0528F355276D30260083E05E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F354276D30260083E05E /* SceneDelegate.swift */; };
 		0528F357276D30260083E05E /* ChordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F356276D30260083E05E /* ChordsViewController.swift */; };
@@ -20,14 +28,34 @@
 		05A49F13276F5F310058C7F8 /* Tuner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A49F12276F5F310058C7F8 /* Tuner.storyboard */; };
 		05A49F15276F60A80058C7F8 /* Chromatic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A49F14276F60A80058C7F8 /* Chromatic.storyboard */; };
 		05A49F17276F60F60058C7F8 /* Metronome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A49F16276F60F60058C7F8 /* Metronome.storyboard */; };
-		05A49F19276F65600058C7F8 /* ChordsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A49F18276F65600058C7F8 /* ChordsService.swift */; };
+		05A49F19276F65600058C7F8 /* ChordTonesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A49F18276F65600058C7F8 /* ChordTonesService.swift */; };
 		05A49F1B276F68340058C7F8 /* Tone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A49F1A276F68340058C7F8 /* Tone.swift */; };
+		05A513572774903300704090 /* KeyChordsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A513562774903300704090 /* KeyChordsServiceTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0513A57E2773CF4200B8D207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0528F347276D30260083E05E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0528F34E276D30260083E05E;
+			remoteInfo = "mwm-chords";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0513A5612771F2C100B8D207 /* ChordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordsViewModel.swift; sourceTree = "<group>"; };
 		0513A569277366E500B8D207 /* PickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerData.swift; sourceTree = "<group>"; };
 		0513A56F2773A10600B8D207 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		0513A5712773CCFB00B8D207 /* KeyChordsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChordsService.swift; sourceTree = "<group>"; };
+		0513A5732773CE3F00B8D207 /* Error+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Enum.swift"; sourceTree = "<group>"; };
+		0513A57A2773CF4200B8D207 /* mwm-chordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mwm-chordsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0513A57C2773CF4200B8D207 /* mwm_chordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mwm_chordsTests.swift; sourceTree = "<group>"; };
+		0513A5842773D01E00B8D207 /* ChordTonesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordTonesServiceTests.swift; sourceTree = "<group>"; };
+		0513A5862773D05100B8D207 /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		0513A5882773D15F00B8D207 /* Tones.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tones.json; sourceTree = "<group>"; };
+		0513A58A2773D27700B8D207 /* KeyChords.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KeyChords.json; sourceTree = "<group>"; };
+		0513A58C2773D31200B8D207 /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
 		0528F34F276D30260083E05E /* mwm-chords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mwm-chords.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0528F352276D30260083E05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0528F354276D30260083E05E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,11 +68,19 @@
 		05A49F12276F5F310058C7F8 /* Tuner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tuner.storyboard; sourceTree = "<group>"; };
 		05A49F14276F60A80058C7F8 /* Chromatic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chromatic.storyboard; sourceTree = "<group>"; };
 		05A49F16276F60F60058C7F8 /* Metronome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Metronome.storyboard; sourceTree = "<group>"; };
-		05A49F18276F65600058C7F8 /* ChordsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordsService.swift; sourceTree = "<group>"; };
+		05A49F18276F65600058C7F8 /* ChordTonesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordTonesService.swift; sourceTree = "<group>"; };
 		05A49F1A276F68340058C7F8 /* Tone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tone.swift; sourceTree = "<group>"; };
+		05A513562774903300704090 /* KeyChordsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChordsServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0513A5772773CF4200B8D207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0528F34C276D30260083E05E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,7 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				05A49F1A276F68340058C7F8 /* Tone.swift */,
-				05A49F18276F65600058C7F8 /* ChordsService.swift */,
+				05A49F18276F65600058C7F8 /* ChordTonesService.swift */,
+				0513A5712773CCFB00B8D207 /* KeyChordsService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,10 +165,41 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0513A5752773CE4900B8D207 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0513A5732773CE3F00B8D207 /* Error+Enum.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0513A57B2773CF4200B8D207 /* mwm-chordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0513A5832773CFD000B8D207 /* ChordTonesServiceTest */,
+				0513A57C2773CF4200B8D207 /* mwm_chordsTests.swift */,
+				0513A5842773D01E00B8D207 /* ChordTonesServiceTests.swift */,
+				0513A5862773D05100B8D207 /* FakeResponseData.swift */,
+				0513A58A2773D27700B8D207 /* KeyChords.json */,
+				0513A58C2773D31200B8D207 /* URLSessionFake.swift */,
+				05A513562774903300704090 /* KeyChordsServiceTests.swift */,
+			);
+			path = "mwm-chordsTests";
+			sourceTree = "<group>";
+		};
+		0513A5832773CFD000B8D207 /* ChordTonesServiceTest */ = {
+			isa = PBXGroup;
+			children = (
+				0513A5882773D15F00B8D207 /* Tones.json */,
+			);
+			path = ChordTonesServiceTest;
+			sourceTree = "<group>";
+		};
 		0528F346276D30260083E05E = {
 			isa = PBXGroup;
 			children = (
 				0528F351276D30260083E05E /* mwm-chords */,
+				0513A57B2773CF4200B8D207 /* mwm-chordsTests */,
 				0528F350276D30260083E05E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -140,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				0528F34F276D30260083E05E /* mwm-chords.app */,
+				0513A57A2773CF4200B8D207 /* mwm-chordsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +216,7 @@
 		0528F351276D30260083E05E /* mwm-chords */ = {
 			isa = PBXGroup;
 			children = (
+				0513A5752773CE4900B8D207 /* Helpers */,
 				0513A56E2773A0DA00B8D207 /* Extensions */,
 				0513A5662771F30A00B8D207 /* Model */,
 				0513A5632771F2CB00B8D207 /* View */,
@@ -161,6 +231,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0513A5792773CF4200B8D207 /* mwm-chordsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0513A5802773CF4200B8D207 /* Build configuration list for PBXNativeTarget "mwm-chordsTests" */;
+			buildPhases = (
+				0513A5762773CF4200B8D207 /* Sources */,
+				0513A5772773CF4200B8D207 /* Frameworks */,
+				0513A5782773CF4200B8D207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0513A57F2773CF4200B8D207 /* PBXTargetDependency */,
+			);
+			name = "mwm-chordsTests";
+			productName = "mwm-chordsTests";
+			productReference = 0513A57A2773CF4200B8D207 /* mwm-chordsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0528F34E276D30260083E05E /* mwm-chords */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0528F363276D30270083E05E /* Build configuration list for PBXNativeTarget "mwm-chords" */;
@@ -188,6 +276,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					0513A5792773CF4200B8D207 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 0528F34E276D30260083E05E;
+					};
 					0528F34E276D30260083E05E = {
 						CreatedOnToolsVersion = 13.2;
 					};
@@ -207,11 +299,21 @@
 			projectRoot = "";
 			targets = (
 				0528F34E276D30260083E05E /* mwm-chords */,
+				0513A5792773CF4200B8D207 /* mwm-chordsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0513A5782773CF4200B8D207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0513A58B2773D27700B8D207 /* KeyChords.json in Resources */,
+				0513A5892773D15F00B8D207 /* Tones.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0528F34D276D30260083E05E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +331,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0513A5762773CF4200B8D207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0513A5852773D01E00B8D207 /* ChordTonesServiceTests.swift in Sources */,
+				0513A58D2773D31200B8D207 /* URLSessionFake.swift in Sources */,
+				0513A57D2773CF4200B8D207 /* mwm_chordsTests.swift in Sources */,
+				0513A5872773D05100B8D207 /* FakeResponseData.swift in Sources */,
+				05A513572774903300704090 /* KeyChordsServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0528F34B276D30260083E05E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,15 +350,25 @@
 				0528F357276D30260083E05E /* ChordsViewController.swift in Sources */,
 				0528F353276D30260083E05E /* AppDelegate.swift in Sources */,
 				0513A56A277366E500B8D207 /* PickerData.swift in Sources */,
-				05A49F19276F65600058C7F8 /* ChordsService.swift in Sources */,
+				05A49F19276F65600058C7F8 /* ChordTonesService.swift in Sources */,
 				0513A5622771F2C100B8D207 /* ChordsViewModel.swift in Sources */,
+				0513A5742773CE3F00B8D207 /* Error+Enum.swift in Sources */,
 				0528F355276D30260083E05E /* SceneDelegate.swift in Sources */,
+				0513A5722773CCFB00B8D207 /* KeyChordsService.swift in Sources */,
 				05A49F1B276F68340058C7F8 /* Tone.swift in Sources */,
 				0513A5702773A10600B8D207 /* Array+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0513A57F2773CF4200B8D207 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0528F34E276D30260083E05E /* mwm-chords */;
+			targetProxy = 0513A57E2773CF4200B8D207 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0528F358276D30260083E05E /* TabBar.storyboard */ = {
@@ -266,6 +390,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0513A5812773CF4200B8D207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 747B9YDG8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ayoubhan.mwm-chordsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mwm-chords.app/mwm-chords";
+			};
+			name = Debug;
+		};
+		0513A5822773CF4200B8D207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 747B9YDG8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ayoubhan.mwm-chordsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mwm-chords.app/mwm-chords";
+			};
+			name = Release;
+		};
 		0528F361276D30270083E05E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -443,6 +605,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0513A5802773CF4200B8D207 /* Build configuration list for PBXNativeTarget "mwm-chordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0513A5812773CF4200B8D207 /* Debug */,
+				0513A5822773CF4200B8D207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0528F34A276D30260083E05E /* Build configuration list for PBXProject "mwm-chords" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

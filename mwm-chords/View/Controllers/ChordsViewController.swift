@@ -9,11 +9,9 @@ import UIKit
 
 class ChordsViewController: UIViewController {
     
-    // let chordViewModel = ChordsViewModel()
+    let chordViewModel = ChordsViewModel()
     var toneNames: [String] = []
     var keyChords: [String] = []
-    let chordService = ChordsService()
-//    let pickerData = PickerData()
     
     @IBOutlet weak var chordTonesPickerView: UIPickerView!
     @IBOutlet weak var chordsDataLabel: UILabel!
@@ -22,29 +20,43 @@ class ChordsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setIt()
+        setPickerview()
         loadChordTones()
+        setColors()
+        setLabels()
     }
     
-    func setIt() {
+    private func setColors() {
+        view.backgroundColor = UIColor(named: "background")
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(named: "title") ?? ""]
+        chordsDataLabel.textColor = UIColor(named: "label")
+    }
+    
+    private func setLabels() {
+        chordsDataLabel.text = "Tone: A \nKey: +"
+    }
+
+    func setPickerview() {
         chordTonesPickerView.delegate = self
         chordTonesPickerView.dataSource = self
     }
     
     private func loadChordTones() {
-        chordService.getChordTones { (result) in
-            switch result {
-            case .success(let namess):
-                self.toneNames = namess
-                self.loadKeyChords()
-            case .failure(let error):
-                print(error)
+        DispatchQueue.main.async {
+            self.chordViewModel.chordTonesService.getChordTones { (result) in
+                switch result {
+                case .success(let namess):
+                    self.toneNames = namess
+                    self.loadKeyChords()
+                case .failure(let error):
+                    print(error)
+                }
             }
         }
     }
     
     private func loadKeyChords() {
-        chordService.getKeyChords { (result) in
+        self.chordViewModel.keyChordsService.getKeyChords { (result) in
             switch result {
             case .success(let suffix):
                 self.keyChords = suffix

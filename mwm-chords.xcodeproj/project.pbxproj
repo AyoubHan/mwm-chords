@@ -8,15 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0513A5622771F2C100B8D207 /* ChordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A5612771F2C100B8D207 /* ChordsViewModel.swift */; };
-		0513A56A277366E500B8D207 /* PickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A569277366E500B8D207 /* PickerData.swift */; };
 		0513A5702773A10600B8D207 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A56F2773A10600B8D207 /* Array+Extension.swift */; };
 		0513A5722773CCFB00B8D207 /* KeyChordsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A5712773CCFB00B8D207 /* KeyChordsService.swift */; };
 		0513A5742773CE3F00B8D207 /* Error+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A5732773CE3F00B8D207 /* Error+Enum.swift */; };
-		0513A57D2773CF4200B8D207 /* mwm_chordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A57C2773CF4200B8D207 /* mwm_chordsTests.swift */; };
 		0513A5852773D01E00B8D207 /* ChordTonesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A5842773D01E00B8D207 /* ChordTonesServiceTests.swift */; };
 		0513A5872773D05100B8D207 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A5862773D05100B8D207 /* FakeResponseData.swift */; };
 		0513A5892773D15F00B8D207 /* Tones.json in Resources */ = {isa = PBXBuildFile; fileRef = 0513A5882773D15F00B8D207 /* Tones.json */; };
-		0513A58B2773D27700B8D207 /* KeyChords.json in Resources */ = {isa = PBXBuildFile; fileRef = 0513A58A2773D27700B8D207 /* KeyChords.json */; };
 		0513A58D2773D31200B8D207 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513A58C2773D31200B8D207 /* URLSessionFake.swift */; };
 		0528F353276D30260083E05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F352276D30260083E05E /* AppDelegate.swift */; };
 		0528F355276D30260083E05E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0528F354276D30260083E05E /* SceneDelegate.swift */; };
@@ -45,16 +42,13 @@
 
 /* Begin PBXFileReference section */
 		0513A5612771F2C100B8D207 /* ChordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordsViewModel.swift; sourceTree = "<group>"; };
-		0513A569277366E500B8D207 /* PickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerData.swift; sourceTree = "<group>"; };
 		0513A56F2773A10600B8D207 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		0513A5712773CCFB00B8D207 /* KeyChordsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChordsService.swift; sourceTree = "<group>"; };
 		0513A5732773CE3F00B8D207 /* Error+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Enum.swift"; sourceTree = "<group>"; };
 		0513A57A2773CF4200B8D207 /* mwm-chordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mwm-chordsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0513A57C2773CF4200B8D207 /* mwm_chordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mwm_chordsTests.swift; sourceTree = "<group>"; };
 		0513A5842773D01E00B8D207 /* ChordTonesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordTonesServiceTests.swift; sourceTree = "<group>"; };
 		0513A5862773D05100B8D207 /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
 		0513A5882773D15F00B8D207 /* Tones.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tones.json; sourceTree = "<group>"; };
-		0513A58A2773D27700B8D207 /* KeyChords.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KeyChords.json; sourceTree = "<group>"; };
 		0513A58C2773D31200B8D207 /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
 		0528F34F276D30260083E05E /* mwm-chords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mwm-chords.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0528F352276D30260083E05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050E29CD2774C8AA0044FEBA /* KeyChordsServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				05A513562774903300704090 /* KeyChordsServiceTests.swift */,
+			);
+			path = KeyChordsServiceTests;
+			sourceTree = "<group>";
+		};
 		0513A55F2771F29000B8D207 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +113,6 @@
 		0513A5632771F2CB00B8D207 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0513A56D2773805300B8D207 /* UIPickers */,
 				0513A5652771F2DD00B8D207 /* UIs */,
 				0513A5642771F2D100B8D207 /* Controllers */,
 			);
@@ -149,14 +150,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0513A56D2773805300B8D207 /* UIPickers */ = {
-			isa = PBXGroup;
-			children = (
-				0513A569277366E500B8D207 /* PickerData.swift */,
-			);
-			path = UIPickers;
-			sourceTree = "<group>";
-		};
 		0513A56E2773A0DA00B8D207 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,23 +169,21 @@
 		0513A57B2773CF4200B8D207 /* mwm-chordsTests */ = {
 			isa = PBXGroup;
 			children = (
-				0513A5832773CFD000B8D207 /* ChordTonesServiceTest */,
-				0513A57C2773CF4200B8D207 /* mwm_chordsTests.swift */,
-				0513A5842773D01E00B8D207 /* ChordTonesServiceTests.swift */,
+				050E29CD2774C8AA0044FEBA /* KeyChordsServiceTests */,
+				0513A5832773CFD000B8D207 /* ChordTonesServiceTests */,
 				0513A5862773D05100B8D207 /* FakeResponseData.swift */,
-				0513A58A2773D27700B8D207 /* KeyChords.json */,
 				0513A58C2773D31200B8D207 /* URLSessionFake.swift */,
-				05A513562774903300704090 /* KeyChordsServiceTests.swift */,
 			);
 			path = "mwm-chordsTests";
 			sourceTree = "<group>";
 		};
-		0513A5832773CFD000B8D207 /* ChordTonesServiceTest */ = {
+		0513A5832773CFD000B8D207 /* ChordTonesServiceTests */ = {
 			isa = PBXGroup;
 			children = (
+				0513A5842773D01E00B8D207 /* ChordTonesServiceTests.swift */,
 				0513A5882773D15F00B8D207 /* Tones.json */,
 			);
-			path = ChordTonesServiceTest;
+			path = ChordTonesServiceTests;
 			sourceTree = "<group>";
 		};
 		0528F346276D30260083E05E = {
@@ -309,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0513A58B2773D27700B8D207 /* KeyChords.json in Resources */,
 				0513A5892773D15F00B8D207 /* Tones.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +327,6 @@
 			files = (
 				0513A5852773D01E00B8D207 /* ChordTonesServiceTests.swift in Sources */,
 				0513A58D2773D31200B8D207 /* URLSessionFake.swift in Sources */,
-				0513A57D2773CF4200B8D207 /* mwm_chordsTests.swift in Sources */,
 				0513A5872773D05100B8D207 /* FakeResponseData.swift in Sources */,
 				05A513572774903300704090 /* KeyChordsServiceTests.swift in Sources */,
 			);
@@ -349,7 +338,6 @@
 			files = (
 				0528F357276D30260083E05E /* ChordsViewController.swift in Sources */,
 				0528F353276D30260083E05E /* AppDelegate.swift in Sources */,
-				0513A56A277366E500B8D207 /* PickerData.swift in Sources */,
 				05A49F19276F65600058C7F8 /* ChordTonesService.swift in Sources */,
 				0513A5622771F2C100B8D207 /* ChordsViewModel.swift in Sources */,
 				0513A5742773CE3F00B8D207 /* Error+Enum.swift in Sources */,

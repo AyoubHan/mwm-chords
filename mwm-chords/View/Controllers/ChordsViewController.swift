@@ -9,15 +9,17 @@ import UIKit
 
 class ChordsViewController: UIViewController {
     
-    let chordViewModel = ChordsViewModel()
-    var toneNames: [String] = []
-    var keyChords: [String] = []
+    // MARK: - Private Properties
+    
+    private let chordViewModel = ChordsViewModel()
+    
+    // MARK: - IBOutlets
     
     @IBOutlet weak var chordTonesPickerView: UIPickerView!
     @IBOutlet weak var chordsDataLabel: UILabel!
     
     // MARK: - Life Cycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setPickerview()
@@ -25,6 +27,8 @@ class ChordsViewController: UIViewController {
         setColors()
         setLabels()
     }
+    
+    // MARK: - Private Methods
     
     private func setColors() {
         view.backgroundColor = UIColor(named: "background")
@@ -42,31 +46,15 @@ class ChordsViewController: UIViewController {
     }
     
     private func loadChordTones() {
-        DispatchQueue.main.async {
-            self.chordViewModel.chordTonesService.getChordTones { (result) in
-                switch result {
-                case .success(let namess):
-                    self.toneNames = namess
-                    self.loadKeyChords()
-                case .failure(let error):
-                    print(error)
-                }
-            }
-        }
-    }
-    
-    private func loadKeyChords() {
-        self.chordViewModel.keyChordsService.getKeyChords { (result) in
-            switch result {
-            case .success(let suffix):
-                self.keyChords = suffix
-            case .failure(let error):
-                print(error)
-            }
+        chordViewModel.getTones()
+        chordViewModel.completionData = { [weak self] in
+            guard let self = self else { return }
             self.chordTonesPickerView.reloadAllComponents()
         }
     }
 }
+
+// MARK: - UIPickerViewDataSource
 
 extension ChordsViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -76,29 +64,31 @@ extension ChordsViewController: UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         var count = 0
         if component == 0 {
-            count = toneNames.count
+            count = chordViewModel.toneNames.count
         } else {
-            count = keyChords.count
+            count = chordViewModel.keyChords.count
         }
         return count
     }
 }
+
+// MARK: - UIPickerViewDelegate
 
 extension ChordsViewController: UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         var rowData = ""
         if component == 0 {
-            rowData = toneNames[row]
+            rowData = chordViewModel.toneNames[row]
         } else {
-            rowData = keyChords[row]
+            rowData = chordViewModel.keyChords[row]
         }
         return rowData
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let tone = toneNames[pickerView.selectedRow(inComponent: 0)]
-        let key = keyChords[pickerView.selectedRow(inComponent: 1)]
+        let tone = chordViewModel.toneNames[pickerView.selectedRow(inComponent: 0)]
+        let key = chordViewModel.keyChords[pickerView.selectedRow(inComponent: 1)]
         chordsDataLabel.text = "Tone: \(tone) \nKey: \(key)"
     }
 }

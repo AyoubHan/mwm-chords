@@ -41,7 +41,7 @@ class KeyChordsServiceTests: XCTestCase {
     }
     
     func testGetKeyChordsShouldPostFailedCallbackIfIncorrectResponse() {
-        let keyChordsService = KeyChordsService(keyChordsSession: URLSessionFake(data: FakeResponseData.keyChordsCorrectData, response: FakeResponseData.responseKO, error: nil))
+        let keyChordsService = KeyChordsService(keyChordsSession: URLSessionFake(data: FakeResponseData.chordTonesCorrectData, response: FakeResponseData.responseKO, error: nil))
         
         let expectation = XCTestExpectation(description: "waiting for queue change")
         keyChordsService.getKeyChords { (result) in
@@ -71,7 +71,7 @@ class KeyChordsServiceTests: XCTestCase {
     }
     
     func testGetKeyChordsShouldPostSuccessCallbackIfCorrectDataAndCorrectResponse() {
-        let keyChordsService = KeyChordsService(keyChordsSession: URLSessionFake(data: FakeResponseData.chordTonesCorrectData, response: FakeResponseData.responseKO, error: nil))
+        let keyChordsService = KeyChordsService(keyChordsSession: URLSessionFake(data: FakeResponseData.chordTonesCorrectData, response: FakeResponseData.responseOK, error: nil))
 
         let expectation = XCTestExpectation(description: "waiting for queue change")
         keyChordsService.getKeyChords { result in

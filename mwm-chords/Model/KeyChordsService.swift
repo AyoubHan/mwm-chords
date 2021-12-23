@@ -9,13 +9,17 @@ import Foundation
 
 class KeyChordsService {
     
-    let keyChordsURL = "https://europe-west1-mwm-sandbox.cloudfunctions.net/midi-chords"
-    let keyChordsSession: URLSession
-    var task: URLSessionTask?
+    // MARK: - Private Properties
+    
+    private let keyChordsURL = "https://europe-west1-mwm-sandbox.cloudfunctions.net/midi-chords"
+    private let keyChordsSession: URLSession
+    private var task: URLSessionTask?
     
     init(keyChordsSession: URLSession = URLSession(configuration: .default)) {
         self.keyChordsSession = keyChordsSession
     }
+    
+    // MARK: - getKeyChords request
     
     func getKeyChords(callback: @escaping (Result<[String], Error>) -> Void) {
         
@@ -40,8 +44,8 @@ class KeyChordsService {
                     return
                 }
                 
-                let resultKeyChords = responseJSON.allchords.map({ $0.suffix }).sorted()
-                callback(.success(resultKeyChords.removingDuplicates()))
+                var resultKeyChords = responseJSON.allchords.map({ $0.suffix }).sorted()
+                callback(.success(resultKeyChords.removeDuplicates()))
             }
         })
         task?.resume()

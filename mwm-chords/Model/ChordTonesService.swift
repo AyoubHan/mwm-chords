@@ -9,13 +9,17 @@ import Foundation
 
 final class ChordTonesService {
     
+    // MARK: - Private Properties
+    
     private let urlChordsService = "https://europe-west1-mwm-sandbox.cloudfunctions.net/midi-chords"
-    private let sessionChords: URLSession
+    private let sessionChords: URLSession?
     private var task: URLSessionTask?
     
     init(sessionChordTones: URLSession = URLSession(configuration: .default)) {
         self.sessionChords = sessionChordTones
     }
+    
+    // MARK: - getChordTones request
     
     func getChordTones(callback: @escaping (Result<[String], Error>) -> Void) {
         
@@ -23,7 +27,7 @@ final class ChordTonesService {
         
         task?.cancel()
         
-        task = sessionChords.dataTask(with: chordsURL, completionHandler: { (data, response, error) in
+        task = sessionChords?.dataTask(with: chordsURL, completionHandler: { (data, response, error) in
                 guard let data = data, error == nil else {
                     callback(.failure(NetworkError.noData))
                     return
@@ -42,7 +46,6 @@ final class ChordTonesService {
                 let resultNames = responseJSON.allkeys.map({ $0.name }).sorted()
                 
                 callback(.success(resultNames))
-                print(resultNames)
         })
         task?.resume()
     }

@@ -24,13 +24,6 @@ class FakeResponseData {
         return data
     }
     
-    static var keyChordsCorrectData: Data {
-        let bundle = Bundle(for: FakeResponseData.self)
-        let url = bundle.url(forResource: "KeyChords", withExtension: "json")
-        let data = try! Data(contentsOf: url!)
-        return data
-    }
-    
     static let chordTonesIncorrectData = "error".data(using: .utf8)!
     static let keyChordsIncorrectData = "error".data(using: .utf8)!
 }

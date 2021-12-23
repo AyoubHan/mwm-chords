@@ -12,7 +12,8 @@ class URLSessionFake: URLSession {
     var response: URLResponse?
     var error: Error?
     
-    init(urls: URLSessionConfiguration = .ephemeral,data: Data?, response: URLResponse?, error: Error?) {
+    init(urls: URLSessionConfiguration = .default,
+         data: Data?, response: URLResponse?, error: Error?) {
         self.data = data
         self.response = response
         self.error = error
@@ -38,7 +39,7 @@ class URLSessionDataTaskFake: URLSessionDataTask {
     var responseError: Error?
     
     override func resume() {
-        completionHandler?(data, response, error)
+        completionHandler?(data, urlResponse, responseError)
     }
     
     override func cancel() {
